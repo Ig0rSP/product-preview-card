@@ -1,0 +1,112 @@
+.montserrat-Montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.fraunces-Fraunces {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+}
+
+
+body {
+    --bg-color: hsl(30, 38%, 92%);
+    --cont-color: hsl(0, 0%, 100%);
+    --btn-color: hsl(158, 36%, 37%);
+    --btn-hover-color: hsl(158, 42%, 18%);
+    --txt-color: hsl(228, 12%, 48%);
+    --title-color: hsl(212, 21%, 14%);
+
+    background: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1em;
+    height: 100vh;
+
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--txt-color);
+}
+
+main {
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: .7em;
+    max-width: 100vw;
+    background-color: var(--cont-color);
+    overflow: hidden;
+}
+
+.foto, .foto img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    margin: 1.5em;
+}
+
+.content__type {
+    margin: 0;
+    margin-block-end: .7em;
+    font-weight: 500;
+    font-size: .8em;
+    letter-spacing: .45em;
+}
+
+.content__name {
+    font-family: 'Fraunces';
+    color: var(--title-color);
+    font-size: 2.25em;
+    line-height: 1em;
+    margin: 0;
+}
+
+.content__text {
+    line-height: 1.6em;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 1.75em;
+}
+
+.price__new {
+    font-family: 'Fraunces';
+    color: var(--btn-color);
+    font-weight: 700;
+    margin: 0;
+    font-size: 2.25em;
+}
+
+.price__old {
+    text-decoration: line-through;
+    margin: 0;
+}
+
+.content__button {
+    display: flex;
+    justify-content: center;
+    gap: .9em;
+    border-radius: .5em;
+    width: auto;
+    padding: 1em;
+    margin-block-start: 1.5em;
+    background: var(--btn-color);
+    color: var(--cont-color);
+    font-weight: 700;
+}
